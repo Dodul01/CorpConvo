@@ -5,6 +5,7 @@ import Gallery from "../Pages/Gallery/Gallery";
 import About from "../Pages/About/About";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       },{
         path: '/register',
         element: <Register></Register>
+      },{
+        path: '/serviceDetails/:id',
+        loader: ()=> fetch('../serviceData.json'),
+        element: <ServiceDetails></ServiceDetails>
       }
     ]
   }
