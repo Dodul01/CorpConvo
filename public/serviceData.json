@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Conferences and Seminars",
+    "image": "https://images.unsplash.com/photo-1551677629-c3e314ecf29c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 15000,
+    "shortDescription": "Host successful conferences and seminars with our expert event management services.",
+    "longDescription": "Make your conferences and seminars unforgettable with our comprehensive event management solutions. From venue selection and logistics planning to speaker coordination and attendee engagement, we handle it all. Our experienced team ensures seamless execution, leaving you free to focus on your event's content and objectives."
+  },
+  {
+    "id": 2,
+    "name": "Trade Shows and Expos",
+    "image": "https://images.unsplash.com/photo-1567574446891-7aef076416ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 20000,
+    "shortDescription": "Create memorable trade shows and expos with our professional event planning.",
+    "longDescription": "Elevate your trade shows and expos to new heights with our event planning expertise. We specialize in designing captivating booth layouts, attracting exhibitors, and ensuring smooth operations. Whether it's a trade exhibition or a grand expo, we'll help you make a lasting impression on both exhibitors and attendees."
+  },
+  {
+    "id": 3,
+    "name": "Team Building Workshops",
+    "image": "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1447&q=80",
+    "price": 5000,
+    "shortDescription": "Boost team morale and productivity through engaging team building workshops.",
+    "longDescription": "Invest in your team's growth and unity with our team building workshops. Our facilitators create custom programs to improve communication, collaboration, and problem-solving skills. Whether it's a corporate retreat or an on-site workshop, we'll help your team thrive and bond."
+  },
+  {
+    "id": 4,
+    "name": "Product Launches",
+    "image": "https://images.unsplash.com/photo-1544531585-9847b68c8c86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 18000,
+    "shortDescription": "Ensure successful product launches with our event management expertise.",
+    "longDescription": "Introduce your products to the world in style with our product launch event management. We take care of everything, from venue setup and media invitations to product showcases and press releases. Our goal is to make your product launch a resounding success and leave a lasting impression on your audience."
+  },
+  {
+    "id": 5,
+    "name": "Corporate Meetings",
+    "image": "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 10000,
+    "shortDescription": "Plan and execute productive corporate meetings with our professional services.",
+    "longDescription": "Streamline your corporate meetings with our professional event planning. We handle all aspects, from scheduling and agenda planning to audiovisual setup and catering. Our attention to detail ensures that your meetings are efficient, engaging, and conducive to achieving your business goals."
+  },
+  {
+    "id": 6,
+    "name": "Award Ceremonies",
+    "image": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80v",
+    "price": 16000,
+    "shortDescription": "Celebrate achievements in style with our award ceremony event planning.",
+    "longDescription": "Honor achievements and milestones with elegance and class through our award ceremony event planning. We curate memorable ceremonies, manage award presentations, and handle event logistics. Let us help you create an atmosphere of celebration and recognition for your deserving recipients."
+  }
+]

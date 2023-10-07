@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Nav = () => {
 
@@ -11,7 +11,7 @@ const Nav = () => {
   </>
 
   return (
-    <div className="navbar bg-base-100 max-w-7xl mx-auto">
+    <div className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,7 +29,7 @@ const Nav = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-red-500 text-white hover:bg-red-400">LogIn</a>
+        <Link to='/login' className="btn bg-red-500 text-white hover:bg-red-400">LogIn</Link>
       </div>
     </div>
   )
