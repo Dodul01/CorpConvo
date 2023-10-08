@@ -14,7 +14,7 @@ const ServiceDetails = () => {
       </div>
       <div className='px-4'>
         <h1 className='text-2xl mb-2 font-bold'>{name}</h1>
-        <h3 className='text-xl mb-4 font-semibold'>${price} USD</h3>
+        <h3 className='text-xl mb-4 font-semibold'>Price: ${price} USD</h3>
         <p className='text-gray-700 text-lg max-w-xl mb-4'>{longDescription}</p>
         <button className='btn text-white bg-red-500 hover:bg-red-400'>Book Now</button>
       </div>
