@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [bookings, setBookings] = useState(null);
 
   const googleProvider = new GoogleAuthProvider();
 
@@ -72,7 +73,9 @@ const AppProvider = ({ children }) => {
     isLoading,
     googleRegistration,
     logIn,
-    logOut
+    logOut,
+    bookings,
+    setBookings
   }
 
   useEffect(() => {
