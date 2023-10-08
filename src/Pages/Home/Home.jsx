@@ -1,7 +1,7 @@
 import Banner from "../../Components/Banner/Banner"
 import FAQ from "../../Components/FAQ/FAQ";
-import Footer from "../../Components/Footer/Footer";
 import Services from "../../Components/Services/Services";
+import WhyUs from "../../Components/WhyChoseUsSection/WhyUs";
 
 const Home = () => {
   return (
@@ -13,8 +13,8 @@ const Home = () => {
         <h2 className="text-3xl font-bold mb-8">Our Services</h2>
         <Services></Services>
       </section>
+      <WhyUs></WhyUs>
       <FAQ></FAQ>
-      <Footer></Footer>
     </div>
   )
 }

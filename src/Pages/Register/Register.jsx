@@ -1,10 +1,12 @@
-import { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useContext, useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { AppContext } from '../../AppContext/AppProvider';
+import {FcGoogle} from 'react-icons/fc';
 
 const Register = () => {
   const [message, setMessage] = useState(null);
-  const { createAccount } = useContext(AppContext);
+  const { createAccount, user, googleRegistration } = useContext(AppContext);
+  const navigate = useNavigate();
 
   const handleRegistration = (e) => {
     e.preventDefault();
@@ -30,11 +32,21 @@ const Register = () => {
     createAccount(email, password, userName, imageUrl)
   }
 
+  const handleGoogleRegistration = () => {
+    googleRegistration()
+  }
+
+
+  useEffect(() => {
+    if (user) {
+      navigate('/')
+    }
+  }, [user])
 
   return (
     <div className="hero min-w-screen">
       <div className="card lg:w-[500px] md:w-[400px] w-full shadow-xl lg:border-2 md:border-2 bg-base-100">
-        <form onSubmit={handleRegistration} className="card-body">
+        <form onSubmit={handleRegistration} className="card-body mb-2 pb-2 pt-2">
           <h1 className='text-xl font-bold'>Register</h1>
           <div className="form-control">
             <label className="label">
@@ -65,9 +77,12 @@ const Register = () => {
             <button className="btn bg-red-500 hover:bg-red-400 text-white">Register</button>
           </div>
           <hr />
-          <p className='font-bold underline'>Continue With Google</p>
           <p className='mt-1'>Already Have an accout ? <Link className='underline font-semibold text-red-500' to='/login'>Login</Link></p>
         </form>
+        <div className='mx-10 mb-3'>
+          <p className='font-bold text-center'>Continue With</p>
+          <button onClick={handleGoogleRegistration} className='border-2 flex items-center justify-between w-[100px] rounded-lg p-2'><FcGoogle className='text-xl'></FcGoogle> <span className='font-bold'>Google</span></button>
+        </div>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ const ServiceCard = ({service}) => {
   const {id, name, image, price, shortDescription} = service;
 
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadowdark:border-gray-700">
+    <div className="max-w-full bg-white border border-gray-200 rounded-lg shadowdark:border-gray-700">
       <img className="rounded-t-lg" src={image} alt={name + ` image`} />
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{name}</h5>

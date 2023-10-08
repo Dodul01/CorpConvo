@@ -10,7 +10,7 @@ const Nav = () => {
     <NavLink className='px-1 mx-2' to='/bookings'>Bookings</NavLink>
     <NavLink className='px-1 mx-2' to='/about'>About</NavLink>
   </>
-
+  // console.log(user.photoURL);
   const handleLogOut = () => {
     logOut();
   }
@@ -25,7 +25,7 @@ const Nav = () => {
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-52">
             {user &&
               <div className='flex mb-4 mx-2'>
-                <img className='h-[40px] w-[40px] btn-circle object-cover mr-1' src={user?.photoURL} alt="" />
+                <img className='h-[40px] w-[40px] btn-circle object-cover mr-1' src={`${user?.photoURL}`} alt="" />
                 <div>
                   <h4 className='font-semibold'>{user?.displayName}</h4>
                   <h4 className='font-semibold'>{user?.email}</h4>

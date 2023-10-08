@@ -8,11 +8,13 @@ import Register from "../Pages/Register/Register";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import Booking from "../Pages/Booking/Booking";
 import PrivateRouter from "../PrivateRouter/PrivateRouter";
+import NotFound from "../Pages/NotFound/NotFound";
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App></App>,
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         path: '/',
