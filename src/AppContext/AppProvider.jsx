@@ -6,9 +6,11 @@ export const AppContext = createContext(null);
 
 const AppProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
   const createAccount = (email, password, userName, imageUrl) => {
+    setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
     .then((result)=>{
       updateProfile(auth.currentUser,{
@@ -23,6 +25,7 @@ const AppProvider = ({ children }) => {
   }
 
   const logIn = (email, password) =>{
+    setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
     .then((result)=>{
       setUser(result.user);
@@ -34,6 +37,7 @@ const AppProvider = ({ children }) => {
   }
 
   const logOut = ()=>{
+    setIsLoading(true);
     signOut(auth)
     .then(()=>{
       alert('log out sucessfully')
@@ -47,19 +51,24 @@ const AppProvider = ({ children }) => {
   const appInfo = {
     createAccount,
     user,
-    errorMessage,
+    isLoading,
     logIn,
     logOut
   }
 
   useEffect(()=>{
     const unsubscribe = onAuthStateChanged(auth, (user)=>{
-      console.log(user);
+      if(user){
+        setUser(user);
+        setIsLoading(false);
+      }else{
+        setIsLoading(false);
+      }
     })
     return ()=>{
       unsubscribe();
     }
-  },[])
+  },[user])
 
   return (
     <AppContext.Provider value={appInfo}>
