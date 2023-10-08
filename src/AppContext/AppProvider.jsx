@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+
   const googleProvider = new GoogleAuthProvider();
 
   const createAccount = (email, password, userName, imageUrl) => {

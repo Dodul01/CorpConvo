@@ -1,10 +1,14 @@
 import React from 'react'
 import faqImage from '../../assets/Questions-amico.svg'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+AOS.init();
 
 const FAQ = () => {
   return (
-    <div className='my-10'>
+    <div data-aos="fade-right" data-aos-duration="800" className='my-10'>
       <h1 className='text-3xl font-bold m-5'>Ganeral FAQ</h1>
       <div className='flex justify-between lg:items-start items-center lg:flex-row flex-col'>
         <div>
