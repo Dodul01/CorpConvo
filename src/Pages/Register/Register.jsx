@@ -44,7 +44,7 @@ const Register = () => {
   }, [user])
 
   return (
-    <div className="hero min-w-screen">
+    <div className="hero min-w-screen mb-4">
       <div className="card lg:w-[500px] md:w-[400px] w-full shadow-xl lg:border-2 md:border-2 bg-base-100">
         <form onSubmit={handleRegistration} className="card-body mb-2 pb-2 pt-2">
           <h1 className='text-xl font-bold'>Register</h1>

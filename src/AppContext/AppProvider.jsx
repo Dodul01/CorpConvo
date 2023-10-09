@@ -59,6 +59,7 @@ const AppProvider = ({ children }) => {
     signInWithPopup(auth, googleProvider)
     .then((reslut)=>{
         setUser(reslut.user);
+        toast.success('Sucessfully Authenticate With Google')
     })
     .catch((error)=>{
       setErrorMessage(error.message)

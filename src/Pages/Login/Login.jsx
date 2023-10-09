@@ -26,7 +26,7 @@ const Login = () => {
   },[user])
 
   return (
-    <div className="hero min-w-screen">
+    <div className="hero min-w-screen mb-4">
       <div className="card lg:w-[500px] md:w-[400px] w-full shadow-xl lg:border-2 md:border-2 bg-base-100">
         <form onSubmit={handleLogin} className="card-body">
           <h1 className='text-xl font-bold'>Login </h1>
