@@ -15,7 +15,7 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer: The output will be an empty object {}.Because greetign and greeting are not the same variable greetign was not declared before but assigned an empty object. Javascript will assign greetign as a new variable in the global scope and set the value as an empty object {}.The greeting was declared but has no value if we console log it will be undefined.
+<details><summary><b>Answer: The output will be (A:{}) an empty object {}.Because greetign and greeting are not the same variable greetign was not declared before but assigned an empty object. Javascript will assign greetign as a new variable in the global scope and set the value as an empty object {}.The greeting was declared but has no value if we console log it will be undefined.
 </b></summary>
 <p>
   
@@ -40,7 +40,7 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer: The output of this code will be 12 and its type is string. Because when we are calling the function we pass 1 as number and 2 as string. Sum function Concatinate a and b as number + string which is 12 and its data type also change to string.</b></summary>
+<details><summary><b>Answer: The output of this code will be (C: "12") 12 and its type will be string. Because when we are calling the function we pass 1 as number and 2 as string. Sum function Concatinate a and b as number + string which is 12 and its data type also change to string.</b></summary>
 <p>
 
 #### Answer: ?
@@ -64,7 +64,7 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer: In this code output will will be the food array [ '🍕', '🍫', '🥑', '🍔' ]. we declare a variable called info and assign an object with property called favoriteFood assign a value from food array on other line we change the property value and we console log the food array.</b></summary>
+<details><summary><b>Answer: In this code output will be (A:['🍕', '🍫', '🥑', '🍔']) the food array [ '🍕', '🍫', '🥑', '🍔' ]. we declare a variable called info and assign an object with property called favoriteFood assign a value from food array on other line we change the property value and we console log the food array.</b></summary>
 <p>
 
 #### Answer: ?
@@ -88,7 +88,7 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer: In sayHi function take a parameter called name but when we are calling the function we didn't pass any value so javascript set the name value as undefined. The output of this code will be Hi there, undefined.</b></summary>
+<details><summary><b>Answer: The output of this code will be (B) Hi there, undefined. In sayHi function take a parameter called name but when we are calling the function we didn't pass any value so javascript set the name value as undefined. The output of this code will be Hi there, undefined.</b></summary>
 <p>
 
 #### Answer: ?
@@ -116,12 +116,10 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details><summary><b>Answer: in this code we assign count value as 0 and nums with an array. we are looping on nums useing for each and checking the nums array each item is truty if it is truthy then we increse the count value by 1. count value will be 3 here because it will not increse the value on first itaration we know 0 is a falsy value.</b></summary>
+<details><summary><b>Answer:The output of this code willbe (C: 3). In this code we assign count value as 0 and nums with an array. we are looping on the nums useing forEach and checking the nums array each item is truty if it is truthy then we are incresing the count value by 1. count value will be 3 here because it will not increse the value on first itaration as we know 0 is a falsy value.</b></summary>
 <p>
 
 #### Answer: ?
-
-<i>Write your explanation here</i>
 
 </p>
 </details>
