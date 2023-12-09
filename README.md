@@ -12,6 +12,8 @@
 
 ## Technology 
 - React JS
+- Firebase Auth
+- AOS (Amimate On Scroll)
 
  <h4>Project Details</h4>
  <p>This is a Corporate event managment project. I have used React, React Router Dom, Tailwind Css, DaisyUi,AOS(Animate On Scroll Library) and Firebase Authentication.A user can sign in here with Google Authentication and Email Password based Authentication. User can not see Previus Event Gallery with out Log In or Registation. After Registration user can book an event and check there booking list on booking route. I have use LocalStorage to store the booking data.</p>
